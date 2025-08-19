@@ -24,7 +24,7 @@ const handleAskAgainEvt = () => {
   str.value = ''
   isDisabled.value = true
   streamSSE({
-    url: '/api/chat/completions',
+    url: '/chat/completions',
     method: 'POST',
     body: JSON.stringify({
       model: "THUDM/GLM-4-9B-0414",
